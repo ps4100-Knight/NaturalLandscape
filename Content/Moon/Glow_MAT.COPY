@@ -1,0 +1,92 @@
+Begin Object Class=/Script/Engine.Material Name="Glow_MAT"
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.RadialGradientExponential"'
+      FunctionInputs(0)=(ExpressionInputId=D38E6C0F499293F6CC65C0AE55AE0D4E,Input=(Expression=MaterialExpressionTextureCoordinate'"Glow_MAT:MaterialExpressionTextureCoordinate_0"',InputName="UVs"))
+      FunctionInputs(1)=(ExpressionInputId=2997555B436C735459B9D695B58F219E,Input=(OutputIndex=-1,InputName="CenterPosition"))
+      FunctionInputs(2)=(ExpressionInputId=B330351C4B254660CCDCA5923C8F3F26,Input=(Expression=MaterialExpressionScalarParameter'"Glow_MAT:MaterialExpressionScalarParameter_1"',InputName="Radius"))
+      FunctionInputs(3)=(ExpressionInputId=2B61E834449DAE3BC4D079B953B5DE0E,Input=(Expression=MaterialExpressionScalarParameter'"Glow_MAT:MaterialExpressionScalarParameter_0"',InputName="Density"))
+      FunctionInputs(4)=(ExpressionInputId=7D5AC5254448D12A92351AA36BEED90A,Input=(OutputIndex=-1,InputName="Invert Density"))
+      FunctionOutputs(0)=(ExpressionOutputId=8D0763534D7AAC86623FB1AE8CD0CC39,Output=(OutputName="RadialGradientExponential"))
+      MaterialExpressionEditorX=-688
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=9DC40FE04FA7A2B58846E980B398C05F
+      Material=Material'"Glow_MAT"'
+      Outputs(0)=(OutputName="RadialGradientExponential")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'"Glow_MAT:MaterialExpressionMaterialFunctionCall_0"')
+      B=(Expression=MaterialExpressionScalarParameter'"Glow_MAT:MaterialExpressionScalarParameter_2"')
+      MaterialExpressionEditorX=-288
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=267780914C6AB569C8E2A781459A4240
+      Material=Material'"Glow_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      DefaultValue=2.000000
+      ParameterName="Density"
+      ExpressionGUID=563ED34347DE716B0B76F9A9AF28F084
+      MaterialExpressionEditorX=-949
+      MaterialExpressionEditorY=311
+      MaterialExpressionGuid=3C5DD2D0408D2255C65CD9A7AAA7C384
+      Material=Material'"Glow_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.500000
+      ParameterName="Radius"
+      ExpressionGUID=E64789134A34FC59E63988A00CC8621F
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=A92A42C94A2276DB28EEB987AD6AF9EE
+      Material=Material'"Glow_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=0.500000
+      ParameterName="Glow Crank"
+      ExpressionGUID=6AFDE3FA4C49F666A1819A84A1D2656F
+      MaterialExpressionEditorX=-793
+      MaterialExpressionEditorY=513
+      MaterialExpressionGuid=3B2B2DFE42FE5B54EF6ECDBE7C784DCB
+      Material=Material'"Glow_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=DD7B8CEF4F0B98D780F1C39442D96CE8
+      Material=Material'"Glow_MAT"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"')
+   Opacity=(Expression=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"')
+   BlendMode=BLEND_Translucent
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   Expressions(0)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   Expressions(1)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(3)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(4)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(5)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=0A9D067E4E4D51F6565B5CB83AAA1B16
+   CachedExpressionData=(Parameters=(RuntimeEntries[0]=(NameHashes=(1735686034510298507,4272836139060574129,6334215791892946739),ParameterInfos=((Name="Density"),(Name="Radius"),(Name="Glow Crank")),ExpressionGuids=(563ED34347DE716B0B76F9A9AF28F084,E64789134A34FC59E63988A00CC8621F,6AFDE3FA4C49F666A1819A84A1D2656F)),ScalarValues=(2.000000,0.500000,0.500000),ScalarMinMaxValues=((X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000)),ScalarCurveValues=(None,None,None),ScalarCurveAtlasValues=(None,None,None)),FunctionInfos=((StateId=42FB52C94B6E464D2D6CB2B5E6A65899,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.ExponentialDensity"'),(StateId=42FB52C94B6E464D2D6CB2B5E6A65899,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.ExponentialDensity"'),(StateId=235C813344D704CA0297108A59B9F710,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.RadialGradientExponential"')),QualityLevelsUsed=(False,False,False,False))
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=E78D17274F6CE179F52AF1A4E94E8925
+End Object

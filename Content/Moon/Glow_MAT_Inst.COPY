@@ -1,0 +1,15 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="Glow_MAT_Inst"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=9265343B4EC2653697AE23BAECBB8465
+   Parent=Material'"/Game/Moon/Glow_MAT.Glow_MAT"'
+   ScalarParameterValues(0)=(ParameterInfo=(Name="Density"),ParameterValue=0.708878,ExpressionGUID=563ED34347DE716B0B76F9A9AF28F084)
+   ScalarParameterValues(1)=(ParameterInfo=(Name="Glow Crank"),ExpressionGUID=6AFDE3FA4C49F666A1819A84A1D2656F)
+   ScalarParameterValues(2)=(ParameterInfo=(Name="Radius"),ParameterValue=0.500000,ExpressionGUID=E64789134A34FC59E63988A00CC8621F)
+   ScalarParameterValues(3)=(ParameterInfo=(Name="RefractionDepthBias"))
+   BasePropertyOverrides=(BlendMode=BLEND_Translucent,ShadingModel=MSM_Unlit,OpacityMaskClipValue=0.333300)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=EF8FB85D4E7049953F27699EBF7D41C4
+End Object

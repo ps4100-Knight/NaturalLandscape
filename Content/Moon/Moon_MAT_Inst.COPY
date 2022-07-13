@@ -1,0 +1,20 @@
+Begin Object Class=/Script/Engine.MaterialInstanceConstant Name="Moon_MAT_Inst"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   ParameterStateId=0561BBB84D2296B90C8A4E9789899B47
+   Parent=Material'"/Game/Moon/Moon_MAT.Moon_MAT"'
+   ScalarParameterValues(0)=(ParameterInfo=(Name="Edge Saturation"),ParameterValue=0.623810,ExpressionGUID=98C4CA354A1D0F600982DEBF2C65CAE6)
+   ScalarParameterValues(1)=(ParameterInfo=(Name="GlowCrank"),ParameterValue=1.700308,ExpressionGUID=DE4CA54742B4BBFECB1E02ADC53D4A27)
+   ScalarParameterValues(2)=(ParameterInfo=(Name="Image saturation"),ParameterValue=0.077619,ExpressionGUID=F7F9F7494633FF3DD1DCA1808021A258)
+   ScalarParameterValues(3)=(ParameterInfo=(Name="RotationAngle"),ParameterValue=0.646190,ExpressionGUID=B0DFDECC4D85C7246F27DE861AD9AD97)
+   ScalarParameterValues(4)=(ParameterInfo=(Name="RefractionDepthBias"))
+   BasePropertyOverrides=(BlendMode=BLEND_Translucent,ShadingModel=MSM_Unlit,OpacityMaskClipValue=0.333300)
+   ReferencedTextureGuids(0)=A5CA8F95482726FE467822A0D4031212
+   CachedReferencedTextures(0)=Texture2D'"/Game/Moon/Moon_Diffuse.Moon_Diffuse"'
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="Moon_Diffuse",TextureReference=/Game/Moon/Moon_Diffuse.Moon_Diffuse)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=FA52E8EA4ACACDAC5E40908A6345293F
+End Object

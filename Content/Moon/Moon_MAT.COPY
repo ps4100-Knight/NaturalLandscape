@@ -1,0 +1,238 @@
+Begin Object Class=/Script/Engine.Material Name="Moon_MAT"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraVectorWS Name="MaterialExpressionCameraVectorWS_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDotProduct Name="MaterialExpressionDotProduct_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexNormalWS Name="MaterialExpressionVertexNormalWS_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionTextureCoordinate'"Moon_MAT:MaterialExpressionTextureCoordinate_0"')
+      B=(Expression=MaterialExpressionAppendVector'"Moon_MAT:MaterialExpressionAppendVector_1"')
+      MaterialExpressionEditorX=-894
+      MaterialExpressionEditorY=179
+      MaterialExpressionGuid=6F34E1A64C0A3E47CF146B8FE72610AA
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_1"
+      A=(Expression=MaterialExpressionScalarParameter'"Moon_MAT:MaterialExpressionScalarParameter_0"')
+      B=(Expression=MaterialExpressionConstant'"Moon_MAT:MaterialExpressionConstant_0"')
+      MaterialExpressionEditorX=-938
+      MaterialExpressionEditorY=426
+      MaterialExpressionGuid=6484C72F4A55124255925CAC91772572
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionCameraVectorWS_0"
+      MaterialExpressionEditorX=-10
+      MaterialExpressionEditorY=623
+      MaterialExpressionGuid=57255B76488E4A61DCD7C2BB156454B9
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0"
+      Input=(Expression=MaterialExpressionMultiply'"Moon_MAT:MaterialExpressionMultiply_0"')
+      Min=(Expression=MaterialExpressionScalarParameter'"Moon_MAT:MaterialExpressionScalarParameter_2"')
+      Max=(Expression=MaterialExpressionConstant'"Moon_MAT:MaterialExpressionConstant_1"')
+      MaterialExpressionEditorX=-139
+      MaterialExpressionEditorY=399
+      MaterialExpressionGuid=792718BB4394D304A30C028AA05152F1
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      MaterialExpressionEditorX=-1104
+      MaterialExpressionEditorY=544
+      MaterialExpressionGuid=5D55CB4F46D3E3A270E119A7347A8EAB
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=1.000000
+      MaterialExpressionEditorX=-181
+      MaterialExpressionEditorY=589
+      MaterialExpressionGuid=1931F77745F4F2BD2E93ABBA7A2B6BA1
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=480
+      MaterialExpressionGuid=F6719AA449EFEC55A8547DB7E196E852
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_1"
+      Constant=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=39
+      MaterialExpressionEditorY=280
+      MaterialExpressionGuid=C3CED1394527BED1FEFD669CE5968EE1
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionDotProduct_0"
+      A=(Expression=MaterialExpressionCameraVectorWS'"Moon_MAT:MaterialExpressionCameraVectorWS_0"')
+      B=(Expression=MaterialExpressionVertexNormalWS'"Moon_MAT:MaterialExpressionVertexNormalWS_0"')
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=704
+      MaterialExpressionGuid=D5643D0A49C63DF62848679590C98E52
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionConstant3Vector'"Moon_MAT:MaterialExpressionConstant3Vector_1"')
+      B=(Expression=MaterialExpressionClamp'"Moon_MAT:MaterialExpressionClamp_0"')
+      Alpha=(Expression=MaterialExpressionPower'"Moon_MAT:MaterialExpressionPower_0"')
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=7AE067484053B0E419F81BAC68B0687D
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0"
+      A=(Expression=MaterialExpressionTextureSample'"Moon_MAT:MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionMultiply'"Moon_MAT:MaterialExpressionMultiply_1"')
+      MaterialExpressionEditorX=-302
+      MaterialExpressionEditorY=362
+      MaterialExpressionGuid=CE67B3FD43EA1C80D9C06B9E5494452E
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1"
+      A=(Expression=MaterialExpressionConstant3Vector'"Moon_MAT:MaterialExpressionConstant3Vector_0"')
+      B=(Expression=MaterialExpressionScalarParameter'"Moon_MAT:MaterialExpressionScalarParameter_1"')
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=592
+      MaterialExpressionGuid=0FD0D2CC4448ECD3F1008DB3388BC58F
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionPower_0"
+      Base=(Expression=MaterialExpressionDotProduct'"Moon_MAT:MaterialExpressionDotProduct_0"')
+      Exponent=(Expression=MaterialExpressionScalarParameter'"Moon_MAT:MaterialExpressionScalarParameter_3"')
+      MaterialExpressionEditorX=359
+      MaterialExpressionEditorY=739
+      MaterialExpressionGuid=DA316C6C4CD564963F0377B50C8A905F
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      ParameterName="RotationAngle"
+      ExpressionGUID=B0DFDECC4D85C7246F27DE861AD9AD97
+      MaterialExpressionEditorX=-1152
+      MaterialExpressionEditorY=311
+      MaterialExpressionGuid=4BE8A4C446195F909BD697873E49B6F9
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=1.000000
+      ParameterName="GlowCrank"
+      ExpressionGUID=DE4CA54742B4BBFECB1E02ADC53D4A27
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=672
+      MaterialExpressionGuid=CB581D69464CAE185074AFA8BA164A25
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=0.030000
+      ParameterName="Image saturation"
+      ExpressionGUID=F7F9F7494633FF3DD1DCA1808021A258
+      MaterialExpressionEditorX=-261
+      MaterialExpressionEditorY=228
+      MaterialExpressionGuid=F5F922CC4D8C1B13C1DBDCB5236121CC
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=0.100000
+      ParameterName="Edge Saturation"
+      ExpressionGUID=98C4CA354A1D0F600982DEBF2C65CAE6
+      MaterialExpressionEditorX=176
+      MaterialExpressionEditorY=864
+      MaterialExpressionGuid=B3E1A12E4BF9617DEE1F868A587D55FA
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorX=-1056
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=2D2A5CD14DA812D31256548E0AAC0330
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionAdd'"Moon_MAT:MaterialExpressionAdd_0"')
+      Texture=Texture2D'"/Game/Moon/Moon_Diffuse.Moon_Diffuse"'
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=E1B97C3F43F62BE668B6B9B7EA13C8C4
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="MaterialExpressionVertexNormalWS_0"
+      MaterialExpressionEditorX=-32
+      MaterialExpressionEditorY=752
+      MaterialExpressionGuid=952DCBCB476F89D5D698ADBA463D26ED
+      Material=Material'"Moon_MAT"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"')
+   BlendMode=BLEND_Translucent
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   EditorX=848
+   EditorY=176
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   Expressions(2)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(3)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_0"'
+   Expressions(4)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_1"'
+   Expressions(5)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(6)=MaterialExpressionMultiply'"MaterialExpressionMultiply_0"'
+   Expressions(7)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_0"'
+   Expressions(8)=MaterialExpressionMultiply'"MaterialExpressionMultiply_1"'
+   Expressions(9)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(10)=MaterialExpressionClamp'"MaterialExpressionClamp_0"'
+   Expressions(11)=MaterialExpressionConstant'"MaterialExpressionConstant_1"'
+   Expressions(12)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(13)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_0"'
+   Expressions(14)=MaterialExpressionCameraVectorWS'"MaterialExpressionCameraVectorWS_0"'
+   Expressions(15)=MaterialExpressionVertexNormalWS'"MaterialExpressionVertexNormalWS_0"'
+   Expressions(16)=MaterialExpressionDotProduct'"MaterialExpressionDotProduct_0"'
+   Expressions(17)=MaterialExpressionPower'"MaterialExpressionPower_0"'
+   Expressions(18)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   Expressions(19)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_1"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=3F25A0A74B8EBDE59AB2E29A771245C9
+   CachedExpressionData=(Parameters=(RuntimeEntries[0]=(NameHashes=(4943569245500326877,7884706511405441652,11590427880385033091,13355928672793367802),ParameterInfos=((Name="Image saturation"),(Name="GlowCrank"),(Name="Edge Saturation"),(Name="RotationAngle")),ExpressionGuids=(F7F9F7494633FF3DD1DCA1808021A258,DE4CA54742B4BBFECB1E02ADC53D4A27,98C4CA354A1D0F600982DEBF2C65CAE6,B0DFDECC4D85C7246F27DE861AD9AD97)),ScalarValues=(0.030000,1.000000,0.100000,0.000000),ScalarMinMaxValues=((X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000)),ScalarCurveValues=(None,None,None,None),ScalarCurveAtlasValues=(None,None,None,None)),ReferencedTextures=(Texture2D'"/Game/Moon/Moon_Diffuse.Moon_Diffuse"'),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=A5CA8F95482726FE467822A0D4031212
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="Moon_Diffuse",TextureReference=/Game/Moon/Moon_Diffuse.Moon_Diffuse)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=9518F8BC4DE724FA95BC59A3CD084BFF
+End Object
